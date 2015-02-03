@@ -1,2 +1,4 @@
 # CsDimPrj_
-My Project
+POC
+Struts 2 Implementation 
+
