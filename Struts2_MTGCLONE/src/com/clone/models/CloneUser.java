@@ -7,7 +7,7 @@ public class CloneUser {
 	private String pass;
 	private String DOB;
 	private String email;
-	public CloneUser(){
+	public CloneUser() {
 		
 	}
 	public int getId() {

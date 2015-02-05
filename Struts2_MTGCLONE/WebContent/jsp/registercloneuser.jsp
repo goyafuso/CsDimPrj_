@@ -9,7 +9,6 @@
 </head>
 <body>
 	<h1>REGISTER PAGE</h1>
-	<s:property value="user"/>
 	<s:form action="register">
 		<s:textfield name="user.fname" placeholder="FIRST NAME" />
 		<s:textfield name="user.lname" placeholder="LAST NAME" />

@@ -4,7 +4,16 @@
    "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
    <package name="mainmappings" extends="struts-default">
-     
+       <action name="debug"
+      		  class="com.clone.controllers.CloneAdminController"
+      		  method="execute">
+      		<result name="success">/jsp/debug.jsp</result>
+      </action>
+       <action name="index"
+      		  class="com.clone.controllers.CloneAdminController"
+      		  method="execute">
+      		<result name="success">/jsp/debug.jsp</result>
+      </action>
       <action name="home" 
             class="com.clone.controllers.CloneController" 
             method="execute">
@@ -30,6 +39,7 @@
             <!-- validation interceptor/-->
             <!-- DB look up INTERCEPTOR -->
             <result name="success">/jsp/message.jsp</result>
+            <result name="input">/jsp/registercloneuser.jsp</result>
       </action>
    </package>
 </struts>

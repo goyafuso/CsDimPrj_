@@ -11,7 +11,8 @@
 	<h1>LOGIN PAGE</h1>
 <%-- 	<s:property value="cuser"/> --%>
 	<s:form action="login">
-		<s:textfield name="user.email" placeholder="User Name" />
+		<s:textfield name="user.email" placeholder="User Name" /> 
+		<%-- <s:textfield key="user.email" /> --%>
 		<s:password name="user.pass" />
 		<s:submit value="Login" />
 	</s:form>

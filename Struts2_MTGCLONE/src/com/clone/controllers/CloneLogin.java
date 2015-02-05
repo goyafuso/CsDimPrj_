@@ -19,17 +19,15 @@ public class CloneLogin extends ActionSupport{
 		}		
 	}
 	public void validate(){
-		try{
-		//HEY IDIOT ================================================>
-		if ( user.getEmail()==null||user.getEmail().equals("")){//RESOLVE LATER .getEmail May be null at some point 
-			addFieldError( "user.email", "Username is required." );
-		}
-		if ( user.getPass()==null){ 
-				addFieldError( "user.pass", "password is required." );
-		}
-		}
-		catch(Exception e){
-			e.printStackTrace();
+		if(!(user==null)){
+			if(user.getEmail().length()<=0){
+				addFieldError("user.email","User name is required");
+			}
+			if(user.getPass().length()<=0){
+				addFieldError("user.pass","Password is required");
+			}
+		} else {
+			addFieldError("user.email","User name and password are reqired to login");
 		}
 	}
 	public CloneUser getUser() {
